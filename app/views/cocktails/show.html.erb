@@ -1,22 +1,41 @@
-<h1><%= @cocktail.name.capitalize %></h1>
 
-<h2>Doses:</h2>
-
-<ul>
-   <% @doses.each do |dose| %>
-  <li>
-    <p>
-      <b>
-      <%=dose.ingredient.name.capitalize %>:</b> <%= dose.description %>
-      <%= link_to 'Delete Cocktail dose', cocktail_dose_path(@cocktail, dose), method: :delete %>
-    </p>
-  </li>
-  <%end %>
-</ul>
+<div class="container padding-top-70">
+  <div class="row">
 
 
+    <h1><%= @cocktail.name.capitalize %></h1>
 
-<%= link_to 'Delete Cocktail', cocktail_path(@cocktail), method: :delete %>
-<p> <%= link_to 'Add Cocktail doses', new_cocktail_dose_path(@cocktail)  %></p>
+    <h2>Doses:</h2>
 
-<p> <%= link_to 'Back to Cocktail List', cocktails_path%></p>
+    <ul>
+     <% @doses.each do |dose| %>
+     <li>
+      <p>
+        <b>
+          <%=dose.ingredient.name.capitalize %>:</b> <%= dose.description %>
+          <%= link_to 'Delete Cocktail dose', cocktail_dose_path(@cocktail, dose), method: :delete %>
+        </p>
+      </li>
+      <%end %>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <%= link_to 'Delete Cocktail', cocktail_path(@cocktail), method: :delete %>
+    <p> <%= link_to 'Add Cocktail doses', new_cocktail_dose_path(@cocktail)  %></p>
+
+    <p> <%= link_to 'Back to Cocktail List', cocktails_path%></p>
+  </div>
+</div>

@@ -19,7 +19,7 @@ Cocktail.create(name: "Tom Collins")
 Cocktail.create(name: "Pina Colada")
 Cocktail.create(name: "Mai Tai")
 Cocktail.create(name: "Cuba Libre")
-Cocktail.create(name: "VODKA COLA")
+Cocktail.create(name: "VODKA")
 
 
 
