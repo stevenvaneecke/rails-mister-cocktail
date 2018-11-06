@@ -1,0 +1,26 @@
+<div class="navbar-wagon">
+  <!-- Logo -->
+  <a href="/" class="navbar-wagon-brand">
+    <img src="https://static1.squarespace.com/static/52f97bd4e4b08c719fef7e1b/56e327fb1bbee01578e1d85b/56e327fc20c647b40eed0526/1457727489818/Day-10-e.png" alt="logo">
+  </a>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right hidden-xs hidden-sm">
+
+
+    <a href="" class="navbar-wagon-item navbar-wagon-link">All Cocktails</a>
+    <a href="" class="navbar-wagon-item navbar-wagon-link">Add Cocktail</a>
+
+    <!-- Profile picture with dropdown list -->
+    <div class="navbar-wagon-item">
+      <div class="dropdown">
+        <%= image_tag 'steven.jpeg', class: "avatar dropdown-toggle", id:"navbar-wagon-menu", 'data-toggle':"dropdown"%>
+        <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Log Out</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
